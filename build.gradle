@@ -1,0 +1,16 @@
+apply plugin: "java"
+
+repositories {
+	mavenCentral()
+}
+
+archivesBaseName = 'grails-snapshot-dependencies-fix'
+version = '0.1'
+
+dependencies {
+	compile "org.apache.ivy:ivy:2.2.0"
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '0.9'
+}
